@@ -40,17 +40,17 @@ Since some companies show high volatility (Beta > 1) and low profit margins, inv
          Avg Yield =
          AVERAGE('sp-500-index-10-31-2024'[Div Yield(a)])
 
-- Step 11 : Go to Avg Beta & Yield page and plot Avg Yield vs Avg Beta Scatter plot. Drag and drop Sector into the values field. 
+- Step 10 : Go to Avg Beta & Yield page and plot Avg Yield vs Avg Beta Scatter plot. Drag and drop Sector into the values field. 
  The visual looks as follows: 
 
 ![Image](https://github.com/user-attachments/assets/263e3295-3cf9-4ea1-9694-077a28c14536)
 
-  - Step 12 : Now go to "Avg 10 Year Change per Sector" page, and click on Stacked column chart in the Visualizations pane. Drag and drop sector to x-axis and Avg 10 Year Change to y-axis.
+  - Step 11 : Now go to "Avg 10 Year Change per Sector" page, and click on Stacked column chart in the Visualizations pane. Drag and drop sector to x-axis and Avg 10 Year Change to y-axis.
 The visual will look like this: 
 
 ![Image](https://github.com/user-attachments/assets/3bef9c87-578c-4560-9541-3af02c4287a6)
 
-- Step 13 : Now create a new measure to calculate the Net Income Margin. It is calculated as-
+- Step 12 : Now create a new measure to calculate the Net Income Margin. It is calculated as-
  Net Income margin = Net Income / Sales
 
 DAX:
@@ -59,7 +59,7 @@ DAX:
          DIVIDE( SUM('sp-500-index-10-31-2024'[Net Income ($M)]),
          SUM('sp-500-index-10-31-2024'[Sales ($M)]),0) 
 
-- Step 14 : Now go to "Net Income Margin per Sector" page. Add a Line Chart Visual. Drag and drop Sector to x-axis, Net Income Margin to y-axis.
+- Step 13 : Now go to "Net Income Margin per Sector" page. Add a Line Chart Visual. Drag and drop Sector to x-axis, Net Income Margin to y-axis.
 
 The visual will look like this: 
 
@@ -67,11 +67,11 @@ The visual will look like this:
 
 
         
-- Step 15 : Create a new Measure for Profit Margin. It is the same as Net Income margin.
+- Step 14 : Create a new Measure for Profit Margin. It is the same as Net Income margin.
 
          Profit Margin = [Net Income Margin]
         
- - Step 16 : Create a New measure to calculate Risk/Return Profile. It is calculated as -
+ - Step 15 : Create a New measure to calculate Risk/Return Profile. It is calculated as -
 Risk/Return profile = Beta/Yield.
 
 The DAX is as follows:
@@ -88,7 +88,7 @@ Also add the profit Margin column to the table to help analyse the Profit Margin
 
 ![Image](https://github.com/user-attachments/assets/599dcc7e-a6ee-4171-b01d-8314e9e0e7d6)
 
- - Step 17 : Now in the "card" page, add a card to view the details of the company with the least Risk/Return Profile. 
+ - Step 16 : Now in the "card" page, add a card to view the details of the company with the least Risk/Return Profile. 
  
  Select the card visual and drag & drop Full Name, Ticker Symbol, Sector and Last Price into the Fields of the visual. Similar to Step 16 filter by Bottom 1 / by Risk/Ret. Profile (by Value)
 
@@ -96,17 +96,17 @@ Also add the profit Margin column to the table to help analyse the Profit Margin
 
 General Mills is the company with the least Risk/Ret. Profile.
 
-- Step 18 : In the Tree Map page, add a Tree Map to view the Sector and Market Cap of the bottom most Company (Filter by Risk/Ret. Profile), which is General Mills.
+- Step 17 : In the Tree Map page, add a Tree Map to view the Sector and Market Cap of the bottom most Company (Filter by Risk/Ret. Profile), which is General Mills.
 
 ![Image](https://github.com/user-attachments/assets/d09f11a7-b4ba-4ba2-ae87-49646ba73b88)
 
-- Step 19 : Now go to the Intro Page and add buttons to Navigate to the rest of the pages.
+- Step 18 : Now go to the Intro Page and add buttons to Navigate to the rest of the pages.
 Buttons are available in the Insert tab. You can choose arrow buttons and format the button as you wish. Set action to page navigation for all these buttons, and direct them to the respective pages.
 Ctrl + Click on the button to navigate.
 
 ![Image](https://github.com/user-attachments/assets/034c10bc-ba8d-4757-9d8c-36bee3c5af5a)
 
-- Step 20 : Publish Project to Power BI Service. (My Workspace)
+- Step 19 : Publish Project to Power BI Service. (My Workspace)
 # Snapshot of Power BI Service
 ![Image](https://github.com/user-attachments/assets/86e46ae5-17c5-4001-a1e3-3b367039d451)
 
