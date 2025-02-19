@@ -9,7 +9,7 @@ Since some companies show high volatility (Beta > 1) and low profit margins, inv
 
 ### Steps followed 
 
-- Step 1 : Load data into Power BI Desktop, dataset is a csv file. The data is     extracted from https://www.barchart.com/
+- Step 1 : Load data into Power BI Desktop, dataset is a csv file. The data is extracted from https://www.barchart.com/
 - Step 2 : Open power query editor and promote headers, change to appropriate data type, remove unwanted columns, and lastly split columns (Mostly when there is a delimiter present between required and unwanted values) if required and rename them accordingly.
 - Step 3 : Some columns like Sales, Net Income and Market Capital are huge numbers. Divide (Standard operator in the Transform tab) them accordingly by an appropriate divisor to convert them into Millions/Billions.
 - Step 4 : Rename the columns as Sales($M), Market Cap ($B) and Net Income ($M).
